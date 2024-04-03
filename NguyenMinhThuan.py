@@ -7,3 +7,8 @@
 # ->
 # Nam đế cư
 # Nam quốc sơn hà
+
+with open('test.txt', 'r') as file:
+    # Đọc các dòng từ cuối lên đầu và in ra màn hình
+    for line in reversed(list(file.readlines())):
+        print(line.strip())
